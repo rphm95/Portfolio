@@ -1,9 +1,13 @@
+/* ===================================== INDEX.HTML page ================================ */
+
+
 body{
     font-family: 'Noto Sans', sans-serif;
     margin:0;
     width:100%;
     height:100vh;
     background:#ffffff;
+    background-image: url(images/white-background.jpg);
     /* -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; */
 }
@@ -26,7 +30,7 @@ header{
     font-size:2em;
     font-weight:bold;
     /* cursor:pointer; */
-    outline:none;
+    /* outline:none; */
     z-index:10000000000000;
 }
 .cross{
@@ -41,7 +45,7 @@ header{
     line-height:65px;
     font-weight:bold;
     /* cursor:pointer; */
-    outline:none;
+    /* outline:none; */
     z-index:10000000000000;
 }
   .menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
@@ -69,3 +73,72 @@ span{
 a{
     color:#336699;
 }
+
+
+/* ====================================== PORTFOLIO.HTML PAGE ====================================== */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.container > h1 {
+    font-family: "Montserrat", impact;
+	font-weight: 800;
+	font-size: 2.5em;
+	margin-top: 3%;
+    margin-bottom: 3%;
+	color: #4caaa8;
+	text-shadow: 1px 1px #f2cd99;
+	letter-spacing: 2px;
+}
+
+
+/* carousel */
+.carousel-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.carousel-images {
+    width: 80%;
+    background: #e8099670;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px #d967ca;
+
+}
+.carousel-images img {
+	width: 100%;
+	border-radius: 10px;
+	display: none;
+}
+
+.carousel-images img:first-of-type {
+	display: block;
+
+}
+.button {
+    align-self: center;
+	background: #f2cd99;
+	color: #888;
+	padding: 5px;
+	border-radius: 50%;
+	text-align: center;
+	box-shadow: 1px 1px #fa8d8e;
+}
+
+.button:hover {
+    cursor: pointer;
+	background: #8b747486;
+	box-shadow: 1px 1px #f2cd99;
+	color: white;
+}
+
+/* .lnr-chevron-right {
+    color: #0F52BA;
+    font-size: 40px;
+} */
+
