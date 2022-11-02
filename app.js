@@ -19,10 +19,20 @@ $ (() => {
     });
     });
 
-    // $('.contact').on('click', () => {
-    //     $(".menu").slideToggle("slow", function() {
-    //         $()
-    // }) // work on a contact me button with a modal
+    const openModal = () => {
+        $('#modal').css('display', 'block');
+        $('.menu').hide('slow')
+        $('.cross').hide();
+        $('.hamburger').show()
+    }
+
+    $('#aboutme').on('click', openModal);
+
+    const closeModal = () => {
+        $('#modal').css('display', 'none');
+    }
+    $('#close').on('click', closeModal);
+    // work on a contact me button with a modal
 
 // ======================================= PORTFOLIO.HTMLPAGE =======================================
     
