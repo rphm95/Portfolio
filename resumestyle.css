@@ -138,7 +138,7 @@ a{
     display: none;
 }
 #modal-content {
-    background-color: rgba(255, 255, 255, 0.937);
+    background-color: rgba(255, 255, 255, 0.984);
     height: 350px;
     width: 550px;
     border-radius: 2px;
@@ -170,7 +170,7 @@ a{
 
 h1{
     text-align: center;
-    background-color: rgba(173, 123, 38, 0.245);
+    background-color: rgba(173, 123, 38, 0.117);
     letter-spacing: 2px;
 }
 
@@ -184,17 +184,17 @@ h1{
 
 .experience > h2{
     text-align: center;
-    background-color: rgba(173, 123, 38, 0.245);
+    background-color: rgba(173, 123, 38, 0.117);
 }
 
 .education > h2{
     text-align: center;
-    background-color: rgba(173, 123, 38, 0.245);
+    background-color: rgba(173, 123, 38, 0.117);
 }
 
 .interests > h2{
     text-align: center;
-    background-color: rgba(173, 123, 38, 0.245);
+    background-color: rgba(173, 123, 38, 0.117);
 }
 h2{
     margin-top: 35px;
@@ -231,7 +231,7 @@ h6{
 @media only screen and (max-width: 600px){
     #modal-content{
         width: 90%;
-        height: 50%;
+        height: 55%;
         
     }
 }

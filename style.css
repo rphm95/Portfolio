@@ -144,7 +144,7 @@ a{
     text-decoration: none;
     color: #f1efef;
 }
-/* ----- ANIMATION ----- */
+/* -------------- ANIMATION ------------- */
 
 .animation {
     position:relative;
@@ -170,18 +170,18 @@ a{
     transform: scale(0);
     opacity: 0;
     transform-origin: 50% 50%;
-    animation: pulse 4s cubic-bezier(.5,.5,0,1);
+    animation: pulse 5s cubic-bezier(.5,.5,0,1);
 
 }
 
 circle:nth-child(2) {
     fill: #7fc6a4;
-    animation: pulse 4s 1s cubic-bezier(.5,.5,0,1);
+    animation: pulse 5s 1s cubic-bezier(.5,.5,0,1);
 }
 
 circle:nth-child(3) {
     fill: #e5f77d;
-    animation: pulse 4s 1.75s cubic-bezier(.5,.5,0,1);
+    animation: pulse 5s 1.75s cubic-bezier(.5,.5,0,1);
 }
 
 @keyframes pulse {
@@ -195,13 +195,15 @@ circle:nth-child(3) {
 	}
 	
 }
-/* ---- icon bar ----- */
+/* ------------------- icon bar ---------------------- */
+
 .icon-bar{
     position:fixed;
     top:50%;
     /* -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%); */
     transform: translateY(-50%);
+    left: 10px;
 }
 
 .icon-bar a{
@@ -211,16 +213,14 @@ circle:nth-child(3) {
     transition: all 0.5s ease;
     color: white;
     font-size: 20px;
+    opacity: 0.7;
+    
+
 }
 
 .icon-bar a:hover{
     background-color: rgba(0, 0, 0, 0.2);
 }
-
-/* .facebook {
-    background-color: #3b5998;
-    
-} */
 
 .twitter {
     background-color: #1da1f2;
@@ -294,6 +294,22 @@ circle:nth-child(3) {
     }
 
     .icon-bar a{
-        font-size: 14px;
+        font-size: 13px;
+    }
+
+    .icon-bar{
+        left: 0;
+    }
+
+    body{
+        background-size: cover;
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        background-position: 32% 0%;
+        
+    }
+
+    .pulse{
+        width: 80%;
     }
 }
