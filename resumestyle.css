@@ -1,9 +1,9 @@
 body{
-    /* background-image: url(images/moon2.jpg);
+    background-image: url(images/airplane.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; */
+    background-attachment: fixed;
     /* color: white; */
     /* background-color: rgb(32, 29, 29); */
     letter-spacing: 0.8px;
@@ -11,14 +11,14 @@ body{
 
 header{
     width:100%; 
-    background:#0a090a; 
-    height:60px; 
+    background:#292626a7; 
+    height:50px; 
     line-height:60px;
-    border-bottom:1px solid #a48e0f;
+    border-bottom:1px solid #b4ab99e0;
 }
 
 header span{
-    color: #a48e0f;
+    color: white;
     letter-spacing: 2px;
     word-spacing: 3px;
     
@@ -30,7 +30,7 @@ header span{
     right:0;
     line-height:45px;
     padding:5px 15px 0px 15px;
-    color:#a48e0f;;
+    color:#b4ab99e0;
     border:0;
     font-size:2.5em;
     font-weight:bold;
@@ -44,7 +44,7 @@ header span{
     top:0px;
     right:0;
     padding:7px 15px 0px 15px;
-    color:#999;
+    color:rgb(106, 94, 94);
     border:0;
     font-size:4em;
     line-height:65px;
@@ -53,19 +53,14 @@ header span{
     /* outline:none; */
     z-index:10000000000000;
 }
-  .menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
-  .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
-
-  .menu li {
-    display: block; 
-    padding:15px 0 15px 0;
-    border-bottom:#dddddd 1px solid;}
-
-  .menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
-  .menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
-  .menu ul li a:hover {  color: #666; text-decoration:none;}
-  .menu a{text-decoration:none; color:#666;}
-  .menu a:hover{text-decoration:none; color:#666;}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#b6adc3f0;  position:absolute; text-align:center; font-size:15px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:rgba(255, 255, 255, 0.605) 0.4px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:rgb(6, 5, 5);}
+.menu a:hover{text-decoration:none; color:#666;}
   
 
 header{
@@ -155,13 +150,19 @@ a{
 }
 
 #close{
-  background-color: lightpink;
-  border:none;
-  border-radius: 6px;
-  color: white;
-  font-family:Arial, Helvetica, sans-serif;
-  cursor: pointer;
-  text-align: left;
+    background-color: #09090aa9;
+    border-color: rgb(204, 113, 167);
+    border-style:ridge;
+    border-radius: 6px;
+    color: rgb(248, 244, 248);
+    font-family:Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    text-align: left;
+    padding: 0.3em; 
+}
+
+#close:hover{
+    background-color: #50505e61;
 
 }
 
