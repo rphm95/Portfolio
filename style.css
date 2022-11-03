@@ -8,16 +8,26 @@ body{
     width:100%;
     height:100vh;
     background:#ffffff;
-    background-image: url(images/white-background.jpg);
+    background-image: url(images/galaxy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
     /* -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; */
 }
 header{
     width:100%; 
-    background:#00000066; 
+    background:#292626a7; 
     height:50px; 
     line-height:60px;
-    border-bottom:1px solid #000000;
+    border-bottom:1px solid #b4ab99e0;
+}
+header span{
+    color: white;
+    letter-spacing: 2px;
+    word-spacing: 3px;
 }
 .hamburger{
     background:none;
@@ -26,7 +36,7 @@ header{
     right:0;
     line-height:45px;
     padding:5px 15px 0px 15px;
-    color:rgb(15, 11, 11);
+    color:#b4ab99e0;
     border:0;
     font-size:2.5em;
     font-weight:bold;
@@ -49,9 +59,9 @@ header{
     /* outline:none; */
     z-index:10000000000000;
 }
-  .menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+  .menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#e6e2e7;  position:absolute; text-align:center; font-size:15px;}
   .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
-  .menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+  .menu li {display: block;   padding:15px 0 15px 0; border-bottom:#c2b099 0.5px solid;}
   .menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
   .menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
   .menu ul li a:hover {  color: #666; text-decoration:none;}
@@ -188,7 +198,7 @@ circle:nth-child(3) {
 .icon-bar a{
     display:block;
     text-align: center;
-    padding:0.8rem;
+    padding:0.5rem;
     transition: all 0.5s ease;
     color: white;
     font-size: 20px;
@@ -261,71 +271,10 @@ circle:nth-child(3) {
 }
 
 
-
-
-/* ====================================== PORTFOLIO.HTML PAGE ====================================== */
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
+@media only screen and (max-width: 600px){
+    #modal-content{
+        width: 90%;
+        height: 55%;
+        
+    }
 }
-
-.container > h1 {
-	font-weight: 800;
-	font-size: 2.5em;
-	margin-top: 3%;
-    margin-bottom: 3%;
-	color: #541b44;
-	text-shadow: 1px 1px #f2cd99;
-	letter-spacing: 2px;
-}
-
-
-/* carousel */
-.carousel-container {
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.carousel-images {
-    width: 80%;
-    background: #e8099670;
-    padding: 10px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    box-shadow: 2px 2px #d967ca;
-
-}
-.carousel-images img {
-	width: 100%;
-	border-radius: 10px;
-	display: none;
-}
-
-.carousel-images img:first-of-type {
-	display: block;
-
-}
-.button {
-    align-self: center;
-	background: #f2cd99;
-	color: #888;
-	padding: 5px;
-	border-radius: 50%;
-	text-align: center;
-	box-shadow: 1px 1px #fa8d8e;
-}
-
-.button:hover {
-    cursor: pointer;
-	background: #8b747486;
-	box-shadow: 1px 1px #f2cd99;
-	color: white;
-}
-
-/* .lnr-chevron-right {
-    color: #0F52BA;
-    font-size: 40px;
-} */
-
