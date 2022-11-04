@@ -6,6 +6,7 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    margin: 0;
 }
 
 
@@ -52,7 +53,7 @@ header span{
     /* outline:none; */
     z-index:10000000000000;
 }
-.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#b6adc3f0;  position:absolute; text-align:center; font-size:15px;}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#b8b8aaf0;  position:absolute; text-align:center; font-size:15px;}
 .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
 .menu li {display: block;   padding:15px 0 15px 0; border-bottom:rgba(255, 255, 255, 0.605) 0.4px solid;}
 .menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
@@ -91,7 +92,7 @@ a{
     padding:0.5rem;
     transition: all 0.5s ease;
     color: white;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .icon-bar a:hover{
@@ -134,7 +135,7 @@ a{
     display: none;
 }
 #modal-content {
-    background-color: rgba(255, 255, 255, 0.894);
+    background-color: rgba(255, 255, 255, 0.963);
     height: 350px;
     width: 550px;
     border-radius: 2px;
@@ -188,9 +189,10 @@ a{
 /* ---------- carousel ----------------- */
 
 .carousel-container {
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 5%;
     
 }
 
@@ -252,14 +254,19 @@ a{
 @media only screen and (max-width: 600px){
     #modal-content{
         width: 90%;
-        height: 50%;
+        height: 63%;
     }
 
     .icon-bar{
         display: flex;
         left: auto;
         right:30%;
-        top: 55%;
+        top: 70%;
+    }
+
+    .carousel-container{
+        width: 90%;
+        height: 63%;
     }
 
 }
