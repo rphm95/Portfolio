@@ -163,6 +163,11 @@ a{
     cursor: pointer;
     padding: 0.3em; 
 }
+#modal-content > p{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
 
 #close:hover{
     background-color: #50505e61;
@@ -254,7 +259,7 @@ h6{
 @media only screen and (max-width: 600px){
     #modal-content{
         width: 90%;
-        height: 63%;
+        height: 65%;
         
     }
 }

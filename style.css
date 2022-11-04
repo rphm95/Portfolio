@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster+Two');
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 /* ===================================== INDEX.HTML page ================================ */
 
 body{
@@ -108,16 +109,19 @@ h1 {
     font-size: 3em;
     text-align: center;
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 .not{
     font-weight: lighter;
 }
 p{
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: center;
-    margin-right: 1.3em;
-    margin-top: 1.3em;
+    margin-left: 0.9em;
+    margin-top: 0;
+    color:rgb(0, 0, 0);
+    text-shadow: 0 0.5px 0.5px rgb(71, 71, 71);
+    display: block;
 
 }
 
@@ -132,13 +136,17 @@ p{
     padding: 0.5em;
     border-radius: 8px;
     background-color: #09090aa9;
-    border-color: rgb(204, 113, 167);
-    border-style:ridge;
+    border-color: rgba(184, 94, 148, 0.704);
+    border-style: solid;
     cursor: pointer;
+    
+
 }
 
 .contact:hover{
     background-color: #50505e61;
+    border-style: double;
+    border-color: rgba(184, 94, 148, 0.704);
 }
 a{
     text-decoration: none;
@@ -154,6 +162,7 @@ a{
     justify-content: center;
     min-height: 100hv;
     overflow: hidden;
+    flex-direction: column;
 }
 
 .pulse {
@@ -292,12 +301,35 @@ h7 {
     
 }
 
+h1{
+    font-family:'Orbitron', sans-serif;
+    text-shadow: 2px 2px rgba(233, 112, 112, 0.511);
+
+}
+
+p{
+    font-family: 'Space Mono', monospace;
+    
+}
+
+.different{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    text-shadow: none;
+    margin-top: 2px;
+
+}
+
+
+
+
+
 
 
 @media only screen and (max-width: 600px){
     #modal-content{
         width: 90%;
-        height: 55%;
+        height: 57%;
     }
 
     .icon-bar a{
@@ -317,6 +349,8 @@ h7 {
     }
 
     .pulse{
-        width: 80%;
+        width: 90%;
+        height: 100%;
+        
     }
 }
