@@ -63,8 +63,65 @@ $ (() => {
 
     });
 
+    // ------------------------------ SECOND CAROUSEL ------------------------------
+
+    let numOfImages2 = $('.carousel-images2').children().length - 1
+    let currentImageIndex2 = 0
+
+    $('.next-button2').on('click', () => {
+        $('.carousel-images2').children().eq(currentImageIndex2).css('display', 'none')
+
+        if (currentImageIndex2 < numOfImages2) {
+            currentImageIndex2++
+        } else { 
+            currentImageIndex2 = 0
+        }
+
+        $('.carousel-images2').children().eq(currentImageIndex2).css('display', 'block')
+    })
+     
+    $('.previous-button2').on('click', () => {
+        $('.carousel-images2').children().eq(currentImageIndex2).css('display', 'none')
+        if (currentImageIndex2 > 0) {
+            currentImageIndex2--
+        } else { 
+            currentImageIndex2 = numOfImages2
+        }
+        $('.carousel-images2').children().eq(currentImageIndex2).css('display', 'block')
 
 
+    });
+
+    
+    
+    // ------------------------------ THIRD CAROUSEL ------------------------------
+
+    let numOfImages3 = $('.carousel-images3').children().length - 1
+    let currentImageIndex3 = 0
+
+    $('.next-button3').on('click', () => {
+        $('.carousel-images3').children().eq(currentImageIndex3).css('display', 'none')
+
+        if (currentImageIndex3 < numOfImages3) {
+            currentImageIndex3++
+        } else { 
+            currentImageIndex3 = 0
+        }
+
+        $('.carousel-images3').children().eq(currentImageIndex3).css('display', 'block')
+    })
+     
+    $('.previous-button3').on('click', () => {
+        $('.carousel-images3').children().eq(currentImageIndex3).css('display', 'none')
+        if (currentImageIndex3 > 0) {
+            currentImageIndex3--
+        } else { 
+            currentImageIndex3 = numOfImages3
+        }
+        $('.carousel-images3').children().eq(currentImageIndex3).css('display', 'block')
+
+
+    });
 
     // Set a same-site cookie for first-party contexts
     document.cookie = 'cookie1=value1; SameSite=Lax';

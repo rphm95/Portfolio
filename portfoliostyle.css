@@ -1,7 +1,7 @@
 body{
     /* width: 100%; */
     height: 100%;
-    background-image: url(images/books.jpg);
+    background-image: url(images/astronaut.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -53,7 +53,7 @@ header span{
     /* outline:none; */
     z-index:10000000000000;
 }
-.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#b8b8aaf0;  position:absolute; text-align:center; font-size:15px;}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; letter-spacing: 1px; width:100%; background:#b8b8aaf0;  position:absolute; text-align:center; font-size:15px;}
 .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
 .menu li {display: block;   padding:15px 0 15px 0; border-bottom:rgba(255, 255, 255, 0.605) 0.4px solid;}
 .menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
@@ -147,22 +147,30 @@ a{
 }
 
 #close{
-    background-color: #09090aa9;
-    border-color: rgb(204, 113, 167);
+    background-color: rgb(34, 31, 31);
+    box-shadow: 1px black;
+    border-radius: 8px;
     border-style:ridge;
     border-radius: 6px;
     color: rgb(248, 244, 248);
     font-family:Arial, Helvetica, sans-serif;
     cursor: pointer;
-    text-align: left;
     padding: 0.3em; 
 }
+
 
 #close:hover{
     background-color: #50505e61;
 
 }
 
+h7 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:400;
+    font-size: 1.2em;
+    font-style: italic;
+    
+}
 
 
 
@@ -177,17 +185,21 @@ a{
 .container > h1 {
 	font-weight: 800;
 	font-size: 2.5em;
-	margin-top: 3%;
+	margin-top: 0;
     margin-bottom: 7%;
-	color: #0e0d0c;
-	text-shadow: 2px 2px #f2cd99;
+	color: #d8d6d4;
+	text-shadow: 2px 2px #00000071;
 	letter-spacing: 2px;
     word-spacing: 2px;
 }
 
 
 /* ---------- carousel ----------------- */
+#hello{
+    display: flex;
+    flex-direction: column;
 
+}
 .carousel-container {
     width: 80%;
     display: flex;
@@ -196,19 +208,28 @@ a{
     
 }
 
-.carousel-images {
+.carousel-images, .carousel-images2, .carousel-images3 {
     width: 90%;
     background: #38363b70;
     padding: 6px;
     border-radius: 10px;
     box-sizing: border-box;
-    box-shadow: 3px 3px #e3dae2;
-
-
+    box-shadow: 1px 1px #0b0a0b;
 
 }
 .carousel-images img {
 	width: 100%;
+	border-radius: 10px;
+	display: none;
+}
+.carousel-images2 img {
+    width: 100%;
+	border-radius: 10px;
+	display: none;
+}
+
+.carousel-images3 img {
+    width: 100%;
 	border-radius: 10px;
 	display: none;
 }
@@ -217,9 +238,18 @@ a{
 	display: block;
 
 }
+.carousel-images2 img:first-of-type {
+	display: block;
+
+}
+.carousel-images3 img:first-of-type {
+	display: block;
+
+}
+
 .button {
     align-self: center;
-	background: #ffffffa3;
+	/* background: #ffffffa3; */
 	color: rgb(241, 231, 231);
 	/* padding: 5px; */
 	border-radius: 30%;
@@ -234,7 +264,7 @@ a{
 	/* color: rgb(156, 37, 37); */
 }
 
-.next-button {
+.next-button, .next-button2, .next-button3 {
     background-image: url(images/right.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -243,7 +273,7 @@ a{
     /* background-color: #f2cd99; */
 }
 
-.previous-button {
+.previous-button, .previous-button2, .previous-button3{
     background-image: url(images/left.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -251,18 +281,58 @@ a{
     margin-right: 2px;
 }
 
+.wrap {
+    background-color: #ffffff77;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 40%;
+    max-height: 30vh;
+}
+
+p{
+    font-size: 14px;
+    color: #000000;
+   
+}
+
+a{
+    color: #fbf7f7;
+    text-decoration: none;
+    /* font-weight: bold; */
+    font-size: 12px;
+}
+
+.project{
+    background-color: rgb(34, 31, 31);
+    box-shadow: 1px black;
+    padding:2px;
+    border-radius: 8px;
+
+}
+
+.project:hover{
+    background-color: rgb(146, 132, 132);
+    box-shadow: 1px black;
+    padding:2px;
+}
+
+
+.TWO{
+    margin-bottom: 30px;
+}
 @media only screen and (max-width: 600px){
     #modal-content{
         width: 90%;
         height: 63%;
     }
 
-    .icon-bar{
+    /* .icon-bar{
         display: flex;
         left: auto;
-        right:30%;
-        top: 70%;
-    }
+        right:25%;
+        top: 93%;
+    } */
 
     .carousel-container{
         width: 90%;
