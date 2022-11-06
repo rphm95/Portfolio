@@ -213,8 +213,8 @@ h7 {
 
 .carousel-images, .carousel-images2, .carousel-images3 {
     width: 90%;
-    background: #38363b70;
-    padding: 6px;
+    background: #e8e5ec70;
+    padding: 2px;
     border-radius: 10px;
     box-sizing: border-box;
     box-shadow: 1px 1px #0b0a0b;
@@ -268,7 +268,7 @@ h7 {
 }
 
 .next-button, .next-button2, .next-button3 {
-    background-image: url(images/right.png);
+    background-image: url(images/next.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -277,7 +277,8 @@ h7 {
 }
 
 .previous-button, .previous-button2, .previous-button3{
-    background-image: url(images/left.png);
+    background-image: url(images/previous\ copy.png);
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -286,10 +287,11 @@ h7 {
 
 .wrap {
     background-color: #ffffff77;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 5px;
+    padding-top: 0;
+    border-radius: 7px;
     text-align: center;
-    max-width: 40%;
+    max-width: 60%;
     max-height: 30vh;
 }
 
@@ -309,8 +311,8 @@ a{
 .project{
     background-color: rgb(34, 31, 31);
     box-shadow: 1px black;
-    padding:2px;
-    border-radius: 8px;
+    padding:1px;
+
 
 }
 
@@ -324,6 +326,8 @@ a{
 .TWO{
     margin-bottom: 30px;
 }
+
+
 @media only screen and (max-width: 600px){
     #modal-content{
         width: 90%;
@@ -340,6 +344,10 @@ a{
     .carousel-container{
         width: 90%;
         height: 63%;
+    }
+
+    .container > h1{
+        text-align: center;
     }
 
 }
