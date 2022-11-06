@@ -254,7 +254,21 @@ h6{
     word-spacing: 1px;
     letter-spacing: 0.8px;
 }
+#p{
+    text-align: end;
+}
+.print{
+    background-color: rgb(170, 158, 158);
+    color: white;
+    cursor: pointer;
+    margin-right: 4px;
+    margin-top: 2px;
+    border-style: none;
+}
 
+.print:hover{
+    background-color: lightgray;
+}
 
 @media only screen and (max-width: 600px){
     #modal-content{
