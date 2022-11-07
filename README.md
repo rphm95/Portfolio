@@ -1,6 +1,6 @@
 # Portfolio
 
-	live link: (https://rphm95.github.io/Portfolio/index.html)
+	live link: https://rphm95.github.io/Portfolio/index.html
 	
 	The first two days of the project I decided to work primarly on HTML and Jquery, 
 	so I could lay out the structure of the website and add functionality to it.
