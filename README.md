@@ -1,18 +1,10 @@
-# Portfolio
+Site Link: https://nameless-plains-06717.herokuapp.com/
 
-	live link: https://rphm95.github.io/Portfolio/index.html
-	
-	The first two days of the project I decided to work primarly on HTML and Jquery, 
-	so I could lay out the structure of the website and add functionality to it.
-	
-	I first tried to use the same CSS file for the home page and to the projects, eventually I realized it
-	would be really hard do keep the variables and the elements separate when styling. 
-	
-	I left Friday to the major CSS part of the page... It took me a lot of back and forth to decide the color
-	scheme and everything else. 
-	
-	I also added some media query to make sure the website would be functional on every device. It wasnt as painful or
-	hard as i thought it would be, since I decided to use mainly percentage/vh/wh/rem as unit of measure. 
+This repository contains a full stack web application created using Node.js and Express connected to a MongoDb database. It was deployed using Heroku. 
+
+This web application allows the user to keep track of destinations they would like to visit. The destination page contains a detailed infomation about the place, such as image, introductory description, hotel price, flight price, link to book a flight and also, option to add touristc attractions available on that destination.
+
+The attractions are linked in the destination page, this was achieved by creating a relationship between destination and attractions models. This relationship with different databases allows the user to display, add, edit and delete specific information about the sight they plan to visit without affecting the destination infomation. 
 	
 	
 	
